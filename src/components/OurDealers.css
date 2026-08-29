@@ -1,0 +1,293 @@
+.dealers-section {
+  background: #ffffff;
+
+  padding: 65px 70px;
+}
+
+.dealers-container {
+  max-width: 1100px;
+
+  margin: 0 auto;
+}
+
+/* =========================
+   HEADING
+========================= */
+
+.dealers-heading {
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 38px;
+  font-weight: 700;
+
+  color: #111827;
+
+  text-align: center;
+}
+
+.dealers-subtitle {
+  max-width: 620px;
+
+  margin: 10px auto 32px;
+
+  text-align: center;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 16px;
+  line-height: 1.6;
+
+  color: #64748b;
+}
+
+/* =========================
+   GRID
+========================= */
+
+.dealers-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 24px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.dealer-card {
+  position: relative;
+
+  background: #f8fafc;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+
+  padding: 22px;
+
+  text-align: center;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 6px 18px rgba(15, 23, 42, 0.07);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.dealer-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 3px;
+
+  background: #f59e0b;
+
+  transform: scaleX(0);
+  transform-origin: left;
+
+  transition:
+    transform 0.25s ease;
+}
+
+.dealer-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #fcd34d;
+
+  box-shadow:
+    0 12px 28px rgba(15, 23, 42, 0.11);
+}
+
+.dealer-card:hover::before {
+  transform: scaleX(1);
+}
+
+/* =========================
+   BADGE
+========================= */
+
+.dealer-badge {
+  position: absolute;
+
+  top: 16px;
+  right: 16px;
+
+  padding: 6px 12px;
+
+  background: #fef3c7;
+  color: #b45309;
+
+  border-radius: 999px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  z-index: 2;
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.dealer-image-box {
+  width: 100%;
+  height: 175px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f8fafc;
+
+  border-radius: 8px;
+
+  overflow: hidden;
+}
+
+.dealer-image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  transform: scale(0.97);
+
+  transition:
+    transform 0.3s ease;
+}
+
+.dealer-card:hover .dealer-image {
+  transform: scale(1.02);
+}
+
+/* =========================
+   TEXT
+========================= */
+
+.dealer-card h3 {
+  margin-top: 18px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 22px;
+  font-weight: 600;
+
+  color: #111827;
+}
+
+.dealer-card p {
+  max-width: 420px;
+
+  margin: 10px auto 0;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 14px;
+  line-height: 1.6;
+
+  color: #64748b;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 992px) {
+
+  .dealers-section {
+    padding:
+      55px 40px;
+  }
+
+  .dealers-heading {
+    font-size: 33px;
+  }
+
+  .dealers-subtitle {
+    font-size: 15px;
+
+    margin-bottom: 28px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .dealers-section {
+    padding:
+      45px 22px;
+  }
+
+  .dealers-grid {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .dealers-heading {
+    font-size: 28px;
+  }
+
+  .dealers-subtitle {
+    font-size: 15px;
+
+    margin-bottom: 25px;
+  }
+
+  .dealer-image-box {
+    height: 165px;
+  }
+
+  .dealer-card h3 {
+    font-size: 20px;
+  }
+
+  .dealer-card p {
+    font-size: 14px;
+  }
+
+  .dealer-badge {
+    top: 14px;
+    right: 14px;
+
+    font-size: 11px;
+
+    padding: 5px 10px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+  .dealers-section {
+    padding:
+      40px 14px;
+  }
+
+  .dealer-card {
+    padding: 18px;
+  }
+
+  .dealer-image-box {
+    height: 155px;
+  }
+}
