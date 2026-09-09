@@ -1,16 +1,48 @@
-# React + Vite
+# National Fiberglass 🏢
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive corporate website for National Fiberglass, designed to present the company's products, services, and business information in a professional digital experience.
 
-Currently, two official plugins are available:
+## About the Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+National Fiberglass is a corporate website focused on clear presentation of company information, products, services, and business content.
 
-## React Compiler
+The website combines a clean professional interface with responsive design, smooth animations, interactive sections, and modern web technologies.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- Responsive and mobile-friendly design
+- Professional corporate layout
+- Product and services presentation
+- Smooth scroll animations
+- Animated statistics and counters
+- Interactive navigation
+- Responsive routing
+- Supabase integration
+- Modern icon system
+- Clean and user-friendly interface
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+- React
+- Vite
+- JavaScript
+- React Router
+- Tailwind CSS
+- Supabase
+- AOS
+- React CountUp
+- Lucide React
+- React Icons
+- ESLint
+
+## Live Demo
+
+[View Live Website](https://nationalfiberglass.netlify.app/)
+
+## Getting Started
+
+To run the project locally:
+
+```bash
+npm install
+npm run dev
