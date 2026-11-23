@@ -1,48 +1,38 @@
-# National Fiberglass 🏢
+# National Fibre Glass
 
-A modern and responsive corporate website for National Fiberglass, designed to present the company's products, services, and business information in a professional digital experience.
+A responsive corporate website that helps prospective customers explore fiberglass products and contact the business. It presents water tanks, doors, windows, and car porch shades alongside company and brand information.
 
-## About the Project
+[View the live website](https://nationalfiberglass.netlify.app/)
 
-National Fiberglass is a corporate website focused on clear presentation of company information, products, services, and business content.
+## What to explore
 
-The website combines a clean professional interface with responsive design, smooth animations, interactive sections, and modern web technologies.
+- Start at the homepage and browse the Products and Our Brands sections.
+- Use the homepage order action or the Contact page to see the customer enquiry entry points.
+- The React application uses Vite, React Router, and a Supabase client integration.
 
-## Features
+## Run locally
 
-- Responsive and mobile-friendly design
-- Professional corporate layout
-- Product and services presentation
-- Smooth scroll animations
-- Animated statistics and counters
-- Interactive navigation
-- Responsive routing
-- Supabase integration
-- Modern icon system
-- Clean and user-friendly interface
+Use Node.js 22 LTS (22.13 or later in the 22.x series) or Node.js 24 LTS with npm. Install dependencies with `npm ci`.
 
-## Tech Stack
+For Supabase-backed features, create a `.env.local` file with the browser-safe values for a development project you control.
 
-- React
-- Vite
-- JavaScript
-- React Router
-- Tailwind CSS
-- Supabase
-- AOS
-- React CountUp
-- Lucide React
-- React Icons
-- ESLint
-
-## Live Demo
-
-[View Live Website](https://nationalfiberglass.netlify.app/)
-
-## Getting Started
-
-To run the project locally:
+```dotenv
+VITE_SUPABASE_URL=https://YOUR-PROJECT.supabase.co
+VITE_SUPABASE_ANON_KEY=YOUR_BROWSER_SAFE_ANON_KEY
+```
 
 ```bash
-npm install
 npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173).
+
+## Build and preview
+
+```bash
+npm run lint
+npm run build
+npm run preview
+```
+
+Vite writes the static build to `dist/`. The Netlify redirect rule in `public/_redirects` sends deep links to the application entry point so React Router can handle them. For a different static host, configure the equivalent fallback.
